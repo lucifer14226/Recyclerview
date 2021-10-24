@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        recycler
         recyclerView.layoutManager=LinearLayoutManager(this)
         val items=fetchdata()
         val adapter= NewsListAdapter(items)
